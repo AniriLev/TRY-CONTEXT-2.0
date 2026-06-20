@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block body %}
+        <hr>
+          <a class="btn btn-outline-dark" href="/history" role="button">Learnt words</a>
+        <div class="header">
+
+            <div class="text-success">
+                <hr>
+            </div>
+
+            <h3>Hi! I know the best way to learn new words is through CONTEXT. So try me out and see how well you can understand your newly learned words!
+            I will create one sentence using the words you provide and ask one question. Your goal is to analyze the sentence and answer the question to check if you understand the CONTEXT.
+            Let's start!</h3>
+
+            <div>
+                <p>The application uses default words (such as: <em>cat, fish, eat, play, cute, at home, at night</em>) if some words are not provided.</p>
+            </div>
+            <div class="text-success">
+                <hr>
+            </div>
+        </div>
+
+        <div class="container">
+
+                <h2>
+                    Add your words
+                </h2>
+            <div class="input-group">
+                <form action = "/" method = "post">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">2 Nouns</span>
+                        <input autocomplete="off" autofocus aria-label="First name" class="form-control" name="noun" placeholder="cat, fish" type="text">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Transitive verb</span>
+                        <input autocomplete="off" aria-label="First name" class="form-control" name="transitive_verb" placeholder="eat" type="text">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Intransitive verb</span>
+                        <input autocomplete="off" aria-label="First name" class="form-control" name="intransitive_verb" placeholder="play" type="text">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Adjective</span>
+                        <input autocomplete="off" aria-label="First name" class="form-control" name="adjective" placeholder="cute" type="text">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Place</span>
+                        <input autocomplete="off" aria-label="First name" class="form-control" name="place" placeholder="at home" type="text">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Time</span>
+                        <input autocomplete="off" aria-label="First name" class="form-control" name="time" placeholder="at night" type="text">
+                    </div>
+
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-dark mb-3">Try context</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+{% endblock %}
