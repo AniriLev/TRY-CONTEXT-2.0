@@ -1,0 +1,21 @@
+.top-banner {
+    background-image: url("/static/context.png");
+    background-size: contain;
+    background-position: center;  /* Shows lower, cuts top */
+    background-repeat: no-repeat;
+    height: 150px;  /* Set a specific height */
+    width: 100%;}
+
+body{
+    background: linear-gradient(#b7aba1, #090304);
+    min-height: 100vh;
+}
+
+.content{
+    color: #decaaf;
+}
+
+.btn btn-outline-primary{
+    --bs-btn-hover-color: var(--bs-white);
+}
+
