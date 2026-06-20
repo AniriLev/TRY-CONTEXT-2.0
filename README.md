@@ -8,23 +8,23 @@ In a nutshell, the idea of the application is ask a user to complete a form for 
 
 #### The application has:
 
-**f_project/**
-    **app.py** - Flask backend handling routes, database interaction, and communication between templates and logic
-    **learnt_voco.db** - database with voco(table with words and ids), context(table with sentences and ids), link(table with ids of words and sentences to link them)
-    **main.py** - a file with the main logic of the project. There are functions: setup_db(to creat tables in database), main(...), gen_sentence(resieves dictionary of words, returns generated sentence and question), generate_sentence(creats a list of words based on a random sentence structure), check_sentence(heldles all the grammer in the sentence), generate_questions(generates a questio based on the list for the sentence generation), check_answer(checks how close the user's answer is to the correct answer)
-    **README.md**
-    **requirements.txt**
-    **static/**
-        _context.png_ - picture used for the site design
-        _image.png_ - icon
-        _styles.css_
-    **templates/**
-        _error.html_ - is displayed in case of inapropriate input
-        _history.html_ - list of learnt word and created sentences
-        _index.html_ - home page with a form for words
-        _layout.html_
-        _result.html_ - shows different content depending on corret and incorrect answers
-        _sentence.html_ - displays the created sentence, question for the sentence and a form for user's answer
+- **f_project/**
+   - **app.py** - Flask backend handling routes, database interaction, and communication between templates and logic
+   - **learnt_voco.db** - database with voco(table with words and ids), context(table with sentences and ids), link(table with ids of words and sentences to link them)
+   - **main.py** - a file with the main logic of the project. There are functions: setup_db(to creat tables in database), main(...), gen_sentence(resieves dictionary of words, returns generated sentence and question), generate_sentence(creats a list of words based on a random sentence structure), check_sentence(heldles all the grammer in the sentence), generate_questions(generates a questio based on the list for the sentence generation), check_answer(checks how close the user's answer is to the correct answer)
+   - **README.md**
+   - **requirements.txt**
+   - **static/**
+      - _context.png_ - picture used for the site design
+      - _image.png_ - icon
+      - _styles.css_
+   - **templates/**
+      - _error.html_ - is displayed in case of inapropriate input
+      - _history.html_ - list of learnt word and created sentences
+      - _index.html_ - home page with a form for words
+      - _layout.html_
+      - _result.html_ - shows different content depending on corret and incorrect answers
+      - _sentence.html_ - displays the created sentence, question for the sentence and a form for user's answer
 
 #### Technologies used:
 - Python (Flask)
