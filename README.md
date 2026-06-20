@@ -8,7 +8,7 @@ In a nutshell, the idea of the application is ask a user to complete a form for 
 
 #### The application has:
 
-f_project/
+#####f_project/
     app.py - Flask backend handling routes, database interaction, and communication between templates and logic
     learnt_voco.db - database with voco(table with words and ids), context(table with sentences and ids), link(table with ids of words and sentences to link them)
     main.py - a file with the main logic of the project. There are functions: setup_db(to creat tables in database), main(...), gen_sentence(resieves dictionary of words, returns generated sentence and question), generate_sentence(creats a list of words based on a random sentence structure), check_sentence(heldles all the grammer in the sentence), generate_questions(generates a questio based on the list for the sentence generation), check_answer(checks how close the user's answer is to the correct answer)
