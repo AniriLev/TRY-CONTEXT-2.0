@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <hr>
+        <a class="btn btn-outline-dark" href="/" role="button">Home</a>
+    <p></p>
+
+    {% if used_words %}
+        <h2><strong>You've already learnt this word. Let's remember where.</strong></h2>
+        {% for item in used_words %}
+            <ul>
+                <li><h3><em>{{ item }}</em></h3></li>
+            </ul>
+        {% endfor %}
+    {% endif %}
+
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Words</th>
+                <th scope="col">Sentences</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in used %}
+                <tr>
+                    <td scope="row">{{ item.word }}</td>
+                    <td>{{ item.sentence }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
