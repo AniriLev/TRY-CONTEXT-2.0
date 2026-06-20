@@ -1,0 +1,4 @@
+spacy
+flask
+cs50
+Bootstrap
