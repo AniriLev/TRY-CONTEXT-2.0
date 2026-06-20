@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <hr>
+          <a class="btn btn-outline-dark" href="/" role="button">Home</a>
+          <a class="btn btn-outline-dark" href="/history" role="button">Learnt words</a>
+
+
+
+            {% if correct %}
+                <h1><strong>Your answer is correct. Nice job!</strong></h1>
+                <img class="border img-fluid" src="https://png.pngtree.com/recommend-works/png-clipart/20241121/ourmid/pngtree-green-checkmark-right-mark-tick-brush-painted-symbolizing-correct-positive-financial-png-image_14521342.png" title="Nice job">
+            {% endif %}
+
+            {% if incorrect %}
+                <h1><strong>The correct answer is <em>"{{ incorrect }}"</em> Don't worry and try again!</strong></h1>
+                <img class="border img-fluid" src="https://png.pngtree.com/png-vector/20230527/ourmid/pngtree-red-cross-paint-clipart-transparent-background-vector-png-image_7110618.png" title="Try again">
+            {% endif %}
+
+
+{% endblock %}
