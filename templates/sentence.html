@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <hr>
+        <a class="btn btn-outline-dark" href="/history" role="button">Learnt words</a>
+        <a class="btn btn-outline-dark" href="/" role="button">Home</a>
+            <div class="sentence">
+                <h1><strong>Let's see what we got: </strong></h1>
+                <p class="display-6"><em>{{ sentence }}</em></p>
+            </div>
+
+            <hr>
+            <div class="question">
+                <h1><strong>Try to answer the question: </strong></h1>
+                <p class="display-6"><em>{{ question }}</em></p>
+            </div>
+
+            <form action="/sentence" method="post">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Answer</span>
+                    <input name="answer" autofocus aria-label="First name" class="formal-control" type="text">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-dark mb-3">Check my answer</button>
+                </div>
+            </form>
+
+{% endblock %}
+
